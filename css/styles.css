@@ -1,0 +1,462 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montez&family=Yomogi&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family: "Yomogi", cursive;*/
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    grid-gap: 20px;
+    background-color: #D99CB2;
+    border-bottom: #8C3264 2px dotted;
+    position: fixed;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 25%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 15px;
+    grid-gap:15px;
+    font-size: 0;
+    flex-wrap: wrap;
+}
+.menu__item a {
+    text-decoration: none; 
+    margin-right: 40px;
+    font-size: 1.2rem;
+    color: #F2EEEB;
+    width: 20%;
+}
+.menu__item a:hover {
+    color:#8C3264; 
+}
+.menu__item{
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul{
+    position: absolute;
+    display: none;
+}
+.menu ul li {
+    display: block;
+}
+.menu li:hover ul {
+    display: block;
+}
+.menu li ul li a{
+    display: block;
+    margin: 5px;
+    background-color:#9A80BF;
+    font-size: 12px;
+    padding: 5px;
+    width: 140px;
+    border-radius: 5px;
+
+}
+
+.menu__item.active a{
+    text-decoration: underline;
+}
+.hero{
+    background-image: url(../img/heros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    padding-right: 5rem;
+}
+.img_hero{
+    width: 30%;
+}
+.hero h1{
+    font-family: "Montez", cursive;
+    font-size: 12rem;
+    color: #9A80BF;
+    font-style: italic;
+    text-shadow: 5px 0px 2px #363439;
+    font-weight: 550;
+}
+.hero p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #9A80BF;
+    border: #9A80BF 2px dotted;
+    padding: .5rem 1rem;
+    background-color: #ffffff;
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton {
+    font-size: 1.5rem;
+    color: #F2EEEB;
+    background-color: #D99CB2;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-color:#daa8ba;
+}
+.boton:hover {
+    color:#9A80BF;
+    background-color:#daa8ba;
+}
+.presentacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    min-height: 100vh;
+}
+.presentacion img {
+    width: 40%;
+}
+.presentacion .presentacion__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.presentacion h2{
+    color:#8C3264;
+    font-size: 2rem;
+}
+.presentacion p {
+    width: 60%;
+    color: #363439;
+    font-size: 1.2rem;
+}
+.servicios{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 30px;
+    grid-gap: 30px;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    background-color:#F2EEEB;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+.tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+}
+.tarjeta img {
+    max-width: 100%;
+}
+.tarjeta h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #8C3264;
+    margin:1rem 0;
+}
+.tarjeta p {
+    color: #363439;
+    padding: .8rem;
+}
+.boton_tarjeta {
+    font-size: 1rem;
+    color: #F2EEEB;
+    background-color: #D99CB2;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-color:#daa8ba;
+    margin-bottom: 1rem;
+}
+.boton_tarjeta:hover{
+    color:#9A80BF;
+    background-color:#daa8ba;
+}
+
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+.cuidados h2 {
+    color:#8C3264;
+    font-size: 2rem;
+}
+.grid_container {
+    display: grid;
+    width: 80%;
+    height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "caja1 caja2 caja3 caja4"
+    "caja5 caja6 caja7 caja8";
+    margin: 3rem 0;
+    justify-content: center;
+    
+}
+.caja {
+    padding: 1rem;
+    color: #363439;
+}
+.caja1 {
+    grid-area: caja1;
+}
+.caja2 {
+    grid-area: caja2;
+}
+.caja3 {
+    grid-area: caja3;
+}
+.caja4 {
+    grid-area: caja4;
+}
+.caja5 {
+    grid-area: caja5;
+    background-color: #8c326375;
+    text-align: center;
+
+}
+.caja6 {
+    grid-area: caja6;
+    background-color: #8c326360;
+    text-align: center;
+}
+.caja7 {
+    grid-area: caja7;
+    background-color: #8c326349;
+    text-align: center;
+}
+.caja8 {
+    grid-area: caja8;
+    background-color: #8c326321;
+    text-align: center;
+}
+.icon_oso {
+    width: 100px;
+}
+
+footer {
+    background-color: #9A80BF;
+    color: #F2EEEB;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer img {
+    width: 70px;
+}
+.pie p {
+    font-size: .8rem;
+}
+.pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.redes {
+    display: flex;
+    gap: 30px;
+}
+.redes a i{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #F2EEEB;
+}
+.redes a i:hover {
+    color: #8C3264;
+    font-size: 2.2rem;
+}
+
+/********************************ACERCA DE MI************************************/
+
+.sobremi {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi img {
+    width: 20vw;
+    height: 60vh;
+    border-radius: 180px;
+    background-color: #F2EEEB;
+}
+.sobremi div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 3rem;
+    gap: 2rem;
+}
+.sobremi div i {
+    color: #8C3264;
+}
+
+/********************************GALERIA************************************/
+.titulo_galeria {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.titulo_galeria i {
+    color: #8C3264; 
+    padding-top: 2rem;
+}
+
+.galeria {
+    background-color:#F2EEEB;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border: 1px #8C3264 solid;
+    gap: 2rem;
+    margin: 4rem;
+    padding: 2rem;
+    z-index: 100;
+    
+}
+.galeria img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.galeria img:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+}
+
+
+/********************************CONTACTO************************************/
+
+.contacto {
+    background-image: url(../img/heros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100vh;*/  
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .formulario {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#f2eeeb70;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    gap: 5px;
+    padding: 20px;
+}
+
+.contacto .formulario input {
+    border: none;
+    border-bottom: #D99CB2 2px solid;
+    padding: 10px;
+    width: 100%;
+}
+.contacto .formulario textarea {
+    border: none;
+    border-bottom: #D99CB2 2px solid;
+}
+.formulario__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.formulario__info h2 {
+    font-size: 2rem;
+    color: #8C3264;
+    font-family:"Reddit Mono", monospace;
+    font-weight: 500;
+}
+.formulario__campo {
+    display: inline-block;
+}
+
+.boton_frm {
+    font-size: 1rem;
+    color: #F2EEEB;
+    background-color: #D99CB2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-color:#daa8ba;
+    margin-bottom: 10px;
+}
+.boton_frm:hover{
+    color:#9A80BF;
+    background-color:#daa8ba;
+}
+.btn_acciones {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
