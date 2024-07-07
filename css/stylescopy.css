@@ -1,49 +1,101 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montez&family=Yomogi&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap');
-
-/**************RESET***************/
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /*font-family: "Yomogi", cursive;*/
     font-family: "Reddit Mono", monospace;
     font-weight: 400;
 }
 
-/**********PERSONALIZAR BOOTSTRAP NAV BAR**********/
-
-.encabezado{
+/*html {
+    height: 100%;
+}*/
+/*body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}*/
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    grid-gap: 20px;
     background-color: #D99CB2;
+    border-bottom: #8C3264 2px dotted;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
-.navbar-brand > img {
-    width: 40%; 
+.logo {
+    width: 8vw;
+    padding: .3rem;
 }
-.navbar-toggler{
-    border: #F2EEEB solid .5px;
+
+.navbar {
+    display: flex;
+    align-items: center;
 }
-.navbar-nav .nav-link{
-    color: #F2EEEB;
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 15px;
+    grid-gap: 15px;
+    font-size: 0;
+    flex-wrap: wrap;
+}
+
+.menu__item a {
+    text-decoration: none;
+    margin-right: 40px;
     font-size: 1.2rem;
-}
-.navbar-nav .nav-link:hover{
-    color: #9A80BF
-}
-.navbar-nav .nav-link.active{
-    text-decoration: underline;
     color: #F2EEEB;
-}
-.navbar-nav .nav-link.active{
-    color: #F2EEEB;
-}
-.nav-link.active:hover{
-    color: #9A80BF;
-}
-.dropdown-item:hover{
-    background-color: #d99cb27c;
+    width: 20%;
 }
 
-/**********************SECCION HERO***********************/
+.menu__item a:hover {
+    color: #8C3264;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+    display: none;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li a {
+    display: block;
+    margin: 5px;
+    background-color: #9A80BF;
+    font-size: 12px;
+    padding: 5px;
+    width: 140px;
+    border-radius: 5px;
+
+}
+
+.menu__item.active a {
+    text-decoration: underline;
+}
 
 .hero {
     background-image: url(../img/heros.jpg);
@@ -104,12 +156,7 @@
     background-color: #daa8ba;
 }
 
-
-/******************** SECCION PRESENTACION************************/
-
-
 .presentacion {
-    background-color: #daa8ba2f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +177,7 @@
     gap: 20px;
 }
 
-.presentacion__contenedor h2 {
+.presentacion h2 {
     color: #8C3264;
     font-size: 2rem;
 }
@@ -140,8 +187,6 @@
     color: #363439;
     font-size: 1.2rem;
 }
-
-/*********************SERVICIOS************************/
 
 .servicios {
     display: flex;
@@ -204,14 +249,9 @@
     background-color: #daa8ba;
 }
 
-
-/***********************SECCION CUIDADOS**********************/
-
-
 .cuidados {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 3rem;
 }
@@ -288,8 +328,6 @@
     width: 100px;
 }
 
-/*********************FOOTER************************/
-
 footer {
     background-color: #9A80BF;
     color: #F2EEEB;
@@ -306,14 +344,16 @@ footer img {
     width: 70px;
 }
 
+.pie p {
+    font-size: .8rem;
+}
+
 .pie {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-.pie p {
-    font-size: .8rem;
+
 }
 
 .redes {
@@ -335,11 +375,20 @@ footer img {
 /********************************ACERCA DE MI************************************/
 
 .sobremi {
+
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sobremi h2 {
+    color: #8C3264;
+    font-size: 2rem;
 }
 
 .sobremi img {
@@ -357,27 +406,18 @@ footer img {
     gap: 2rem;
 }
 
-.sobremi h2 {
-    color: #8C3264;
-    font-size: 2rem;
-}
-
-.sobremi dIV i {
-    color: #8C3264;
-}
-
 .sobremi p {
     line-height: 1.5;
     margin-bottom: .8rem;
 }
 
-
+.sobremi div i {
+    color: #8C3264;
+}
 
 /********************************SERVICIOS************************************/
-.accordion-button{
-    background-color: #9a80bfa7;
-    color: #F2EEEB;
-    font-size: 1.3rem;
+.container img {
+    max-width: 100%;
 }
 
 /********************************GALERIA************************************/
@@ -414,7 +454,6 @@ footer img {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
-    object-fit: cover;
 }
 
 .galeria img:hover {
@@ -542,15 +581,10 @@ footer img {
         height: auto;
     }
 
-    .container{
-        flex-wrap: wrap;
-    }
-
     .galeria {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(10, 1fr);
     }
-
 }
 
 @media screen and (max-width: 860px) {
