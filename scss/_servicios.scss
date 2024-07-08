@@ -1,0 +1,76 @@
+/*********************SECCION SERVICIOS************************/
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 30px;
+    grid-gap: 30px;
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        text-align: center;
+        background-color: #F2EEEB;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+
+        &hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translate(-3%);
+        }
+
+        .tarjeta img {
+            max-width: 100%;
+        }
+
+        .tarjeta h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #8C3264;
+            margin: 1rem 0;
+        }
+
+        .tarjeta p {
+            color: #363439;
+            padding: .8rem;
+        }
+
+        .boton_tarjeta {
+            font-size: 1rem;
+            color: #F2EEEB;
+            background-color: #D99CB2;
+            border-radius: 5px;
+            padding: 5px 20px;
+            margin-top: 20px;
+            border-color: #daa8ba;
+            margin-bottom: 1rem;
+
+            &hover {
+                color: #9A80BF;
+                background-color: #daa8ba;
+            }
+        }
+    }
+}
+
+
+/********************PAGINA SERVICIOS*****************/
+
+.accordion-button{
+    background-color: #9a80bfa7;
+    color: #F2EEEB;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+

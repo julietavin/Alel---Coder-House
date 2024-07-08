@@ -1,0 +1,89 @@
+/***********************SECCION CUIDADOS**********************/
+
+
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    .cuidados h2 {
+        color: #8C3264;
+        font-size: 2rem;
+    }
+    .grid_container {
+        display: grid;
+        width: 80%;
+        min-height: 400px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+            "caja1 caja2 caja3 caja4"
+            "caja5 caja6 caja7 caja8";
+        margin: 3rem 0;
+        justify-content: center;
+
+        .caja {
+            padding: 1rem;
+            color: #363439;
+
+            .icon_oso {
+                width: 100px;
+            }
+        }
+        
+        .caja1 {
+            grid-area: caja1;
+            text-align: center;
+        }
+        
+        .caja2 {
+            grid-area: caja2;
+            text-align: center;
+        }
+        
+        .caja3 {
+            grid-area: caja3;
+            text-align: center;
+        }
+        
+        .caja4 {
+            grid-area: caja4;
+            text-align: center;
+        }
+        
+        .caja5 {
+            grid-area: caja5;
+            background-color: #8c326375;
+            text-align: center;
+        
+        }
+        
+        .caja6 {
+            grid-area: caja6;
+            background-color: #8c326360;
+            text-align: center;
+        }
+        
+        .caja7 {
+            grid-area: caja7;
+            background-color: #8c326349;
+            text-align: center;
+        }
+        
+        .caja8 {
+            grid-area: caja8;
+            background-color: #8c326321;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+

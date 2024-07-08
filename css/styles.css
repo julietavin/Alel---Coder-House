@@ -509,6 +509,8 @@ footer img {
 }
 
 
+/************************MEDIA QUERIES*********************/
+
 
 @media screen and (max-width: 1060px) {
     header {
@@ -543,7 +545,7 @@ footer img {
     }
 
     .container{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .galeria {

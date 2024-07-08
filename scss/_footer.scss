@@ -1,0 +1,58 @@
+/*********************FOOTER************************/
+
+footer {
+    background-color: #9A80BF;
+    color: #F2EEEB;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    position: sticky;
+
+    a {
+        img {
+            width: 70px;
+        }
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    .redes {
+        display: flex;
+        gap: 30px;
+
+        a {
+            i {
+                font-size: 2rem;
+                text-decoration: none;
+                color: #F2EEEB;
+
+                &hover {
+                    color: #8C3264;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+/**********************SECCION HERO***********************/
+
+.hero {
+    background-image: url(../img/heros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    padding-right: 5rem;
+
+    .img_hero {
+        width: 30%;
+    }
+
+    .hero div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-family: "Montez", cursive;
+            font-size: 12rem;
+            color: #9A80BF;
+            font-style: italic;
+            text-shadow: 5px 0px 2px #363439;
+            font-weight: 550;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #9A80BF;
+            border: #9A80BF 2px dotted;
+            padding: .5rem 1rem;
+            background-color: #ffffff;
+        }
+
+        .boton {
+            font-size: 1.5rem;
+            color: #F2EEEB;
+            background-color: #D99CB2;
+            border-radius: 5px;
+            padding: 10px 30px;
+            margin-top: 20px;
+            border-color: #daa8ba;
+
+            &hover {
+                color: #9A80BF;
+                background-color: #daa8ba;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

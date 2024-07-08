@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap");
 @import url(./_reset.scss);
 @import url(./_bootstrap.scss);
 @import url(./_hero.scss);
@@ -9,4 +9,4 @@
 @import url(./_acercade.scss);
 @import url(./_galeria.scss);
 @import url(./_contacto.scss);
-@import url(./_mediaqueries.scss);
+@import url(./_mediaqueries.scss);/*# sourceMappingURL=main.css.map */
