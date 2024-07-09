@@ -19,7 +19,7 @@
         width: 30%;
     }
 
-    .hero div {
+    div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,19 +42,21 @@
             background-color: #ffffff;
         }
 
-        .boton {
-            font-size: 1.5rem;
-            color: #F2EEEB;
-            background-color: #D99CB2;
-            border-radius: 5px;
-            padding: 10px 30px;
-            margin-top: 20px;
-            border-color: #daa8ba;
-
-            &hover {
-                color: #9A80BF;
-                background-color: #daa8ba;
-
+        a{
+            .boton {
+                font-size: 1.5rem;
+                color: #F2EEEB;
+                background-color: #D99CB2;
+                border-radius: 5px;
+                padding: 10px 30px;
+                margin-top: 20px;
+                border-color: #daa8ba;
+    
+                &hover {
+                    color: #9A80BF;
+                    background-color: #daa8ba;
+    
+                }
             }
         }
     }

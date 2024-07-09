@@ -1,3 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap");
+/**************RESET***************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 400;
+}
 
+/**********PERSONALIZAR BOOTSTRAP NAV BAR**********/
+.encabezado {
+  background-color: #D99CB2;
+}
+.encabezado .navbar-brand > img {
+  width: 40%;
+}
+
+.navbar-toggler {
+  border: #F2EEEB solid 0.5px;
+}
+
+.navbar-nav .nav-link {
+  color: #F2EEEB;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #9A80BF;
+}
+
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  color: #F2EEEB;
+}
+
+.navbar-nav .nav-link.active {
+  color: #F2EEEB;
+}
+
+.nav-link.active:hover {
+  color: #9A80BF;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(217, 156, 178, 0.4862745098);
+}
+
+/**********************SECCION HERO***********************/
+.hero {
+  background-image: url(../img/heros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  padding-right: 5rem;
+}
+.hero .img_hero {
+  width: 30%;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero div h1 {
+  font-family: "Montez", cursive;
+  font-size: 12rem;
+  color: #9A80BF;
+  font-style: italic;
+  text-shadow: 5px 0px 2px #363439;
+  font-weight: 550;
+}
+.hero div p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #9A80BF;
+  border: #9A80BF 2px dotted;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+}
+.hero div a .boton {
+  font-size: 1.5rem;
+  color: #F2EEEB;
+  background-color: #D99CB2;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-color: #daa8ba;
+}
+.hero div a .botonhover {
+  color: #9A80BF;
+  background-color: #daa8ba;
+}
+
+/******************** SECCION PRESENTACION************************/
+.presentacion {
+  background-color: rgba(218, 168, 186, 0.1843137255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  min-height: 100vh;
+}
+.presentacion .presentacion__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.presentacion .presentacion__contenedor h2 {
+  color: #8C3264;
+  font-size: 2rem;
+}
+.presentacion .presentacion__contenedor p {
+  width: 60%;
+  color: #363439;
+  font-size: 1.2rem;
+}
+.presentacion img {
+  width: 70%;
+  margin-right: 4rem;
+}
+
+/*********************SECCION SERVICIOS************************/
+.servicios {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  gap: 30px;
+  grid-gap: 30px;
+}
+.servicios .tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.servicios .tarjeta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-3%);
+}
+.servicios .tarjeta img {
+  max-width: 100%;
+}
+.servicios .tarjeta h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #8C3264;
+  margin: 1rem 0;
+}
+.servicios .tarjeta p {
+  color: #363439;
+  padding: 0.8rem;
+}
+.servicios .tarjeta a .boton_tarjeta {
+  font-size: 1rem;
+  color: #F2EEEB;
+  background-color: #D99CB2;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  border-color: #daa8ba;
+  margin-bottom: 1rem;
+}
+.servicios .tarjeta a .boton_tarjeta:hover {
+  color: #9A80BF;
+  background-color: #daa8ba;
+}
+
+/********************PAGINA SERVICIOS*****************/
+.accordion-button {
+  background-color: rgba(154, 128, 191, 0.6549019608);
+  color: #F2EEEB;
+  font-size: 1.3rem;
+}
+
+/***********************SECCION CUIDADOS**********************/
+.cuidados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.cuidados h2 {
+  color: #8C3264;
+  font-size: 2rem;
+}
+.cuidados .grid_container {
+  display: grid;
+  width: 80%;
+  min-height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "caja1 caja2 caja3 caja4" "caja5 caja6 caja7 caja8";
+  margin: 3rem 0;
+  justify-content: center;
+}
+.cuidados .grid_container .caja {
+  padding: 1rem;
+  color: #363439;
+}
+.cuidados .grid_container .caja .icon_oso {
+  width: 100px;
+}
+.cuidados .grid_container .caja1 {
+  grid-area: caja1;
+  text-align: center;
+  background-color: rgba(154, 128, 191, 0.2941176471);
+}
+.cuidados .grid_container .caja2 {
+  grid-area: caja2;
+  text-align: center;
+  background-color: rgba(154, 128, 191, 0.1333333333);
+}
+.cuidados .grid_container .caja3 {
+  grid-area: caja3;
+  text-align: center;
+  background-color: rgba(154, 128, 191, 0.2941176471);
+}
+.cuidados .grid_container .caja4 {
+  grid-area: caja4;
+  text-align: center;
+  background-color: rgba(154, 128, 191, 0.1333333333);
+}
+.cuidados .grid_container .caja5 {
+  grid-area: caja5;
+  background-color: rgba(140, 50, 99, 0.4588235294);
+  text-align: center;
+}
+.cuidados .grid_container .caja6 {
+  grid-area: caja6;
+  background-color: rgba(140, 50, 99, 0.3764705882);
+  text-align: center;
+}
+.cuidados .grid_container .caja7 {
+  grid-area: caja7;
+  background-color: rgba(140, 50, 99, 0.2862745098);
+  text-align: center;
+}
+.cuidados .grid_container .caja8 {
+  grid-area: caja8;
+  background-color: rgba(140, 50, 99, 0.1294117647);
+  text-align: center;
+}
+
+/*********************FOOTER************************/
+footer {
+  background-color: #9A80BF;
+  color: #F2EEEB;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  position: sticky;
+}
+footer a img {
+  width: 70px;
+}
+footer .pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .pie p {
+  font-size: 0.8rem;
+}
+footer .redes {
+  display: flex;
+  gap: 30px;
+}
+footer .redes a i {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #F2EEEB;
+}
+footer .redes a i:hover {
+  color: #8C3264;
+  font-size: 2.2rem;
+}
+
+/********************************ACERCA DE MI************************************/
+.sobremi {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobremi img {
+  max-width: 25vw;
+  max-height: 60vh;
+}
+.sobremi div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 3rem;
+  gap: 2rem;
+}
+.sobremi div h2 {
+  color: #8C3264;
+  font-size: 2rem;
+}
+.sobremi div i {
+  color: #8C3264;
+}
+.sobremi div p {
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+/********************************GALERIA************************************/
+.titulo_galeria {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.titulo_galeria i {
+  color: #8C3264;
+  padding-top: 2rem;
+}
+
+.galeria {
+  background-color: #F2EEEB;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border: 1px #8C3264 solid;
+  gap: 2rem;
+  margin: 4rem;
+  padding: 2rem;
+  z-index: 100;
+}
+.galeria img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  object-fit: cover;
+}
+.galeria img:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-3%);
+}
+
+/********************************CONTACTO************************************/
+.contacto {
+  background-image: url(../img/heros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .formulario {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  width: 40%;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(242, 238, 235, 0.4392156863);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  gap: 5px;
+  padding: 20px;
+}
+.contacto .formulario .formulario__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contacto .formulario .formulario__info h2 {
+  font-size: 2rem;
+  color: #8C3264;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 500;
+}
+.contacto .formulario .formulario__campo {
+  display: inline-block;
+}
+.contacto .formulario .formulario__campo input {
+  border: none;
+  border-bottom: #D99CB2 2px solid;
+  padding: 10px;
+  width: 100%;
+}
+.contacto .formulario textarea {
+  border: none;
+  border-bottom: #D99CB2 2px solid;
+}
+.contacto .formulario .btn_acciones {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.contacto .formulario .btn_acciones .boton_frm {
+  font-size: 1rem;
+  color: #F2EEEB;
+  background-color: #D99CB2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-color: #daa8ba;
+  margin-bottom: 10px;
+}
+.contacto .formulario .btn_acciones .boton_frm:hover {
+  color: #9A80BF;
+  background-color: #daa8ba;
+}
+
+/************************MEDIA QUERIES*********************/
+@media screen and (max-width: 1060px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentacion {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .presentacion__contenedor {
+    padding: 0;
+    gap: 5px;
+  }
+  .presentacion__contenedor p {
+    width: 80%;
+    text-align: center;
+  }
+  .presentacion img {
+    margin-right: 0;
+    padding-top: 7rem;
+  }
+  .sobremi {
+    flex-direction: column;
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+@media screen and (max-width: 860px) {
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid_container {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-areas: "caja1 caja3" "caja2 caja4" "caja5 caja6" "caja7 caja8";
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  .contacto .formulario {
+    width: 90%;
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+  }
+}
+@media screen and (max-width: 770px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 0px;
+    grid-gap: 0px;
+  }
+  .navbar {
+    padding: 0;
+    margin: 0;
+  }
+  .logo {
+    width: 15vw;
+    padding: 0.2rem 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  .hero {
+    flex-direction: column-reverse;
+    position: relative;
+    padding: 3rem;
+    height: auto;
+  }
+  .img_hero {
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .hero h1 {
+    font-size: 10rem;
+  }
+  .grid_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "caja1 caja1" "caja2 caja2" "caja3 caja3" "caja4 caja4" "caja5 caja6" "caja7 caja8";
+  }
+  .sobreme p {
+    text-align: center;
+  }
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+  }
+  .titulo_galeria h2 {
+    text-wrap: wrap;
+    padding-inline: 2.5rem;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  footer img {
+    width: 70px;
+  }
+  .pie {
+    line-height: 1;
+    margin-bottom: 0;
+    order: 2;
+    padding: 1rem 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

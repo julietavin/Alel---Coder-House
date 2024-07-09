@@ -8,7 +8,7 @@
     align-items: center;
     padding: 3rem;
 
-    .cuidados h2 {
+    h2 {
         color: #8C3264;
         font-size: 2rem;
     }
@@ -36,21 +36,25 @@
         .caja1 {
             grid-area: caja1;
             text-align: center;
+            background-color: #9a80bf4b;
         }
         
         .caja2 {
             grid-area: caja2;
             text-align: center;
+            background-color: #9a80bf22;
         }
         
         .caja3 {
             grid-area: caja3;
             text-align: center;
+            background-color: #9a80bf4b;
         }
         
         .caja4 {
             grid-area: caja4;
             text-align: center;
+            background-color: #9a80bf22;
         }
         
         .caja5 {

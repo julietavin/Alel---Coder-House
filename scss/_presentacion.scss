@@ -9,18 +9,18 @@
     padding: 3rem;
     min-height: 100vh;
 
-    .presentacion .presentacion__contenedor {
+    .presentacion__contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
 
-        .presentacion__contenedor h2 {
+        h2 {
             color: #8C3264;
             font-size: 2rem;
         }
-        .presentacion .presentacion__contenedor p {
+        p {
             width: 60%;
             color: #363439;
             font-size: 1.2rem;
@@ -28,7 +28,7 @@
         
     }
 
-    .presentacion img {
+    img {
         width: 70%;
         margin-right: 4rem;
     }

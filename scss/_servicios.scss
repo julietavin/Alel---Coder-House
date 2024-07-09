@@ -14,48 +14,50 @@
         align-items: center;
         width: 300px;
         text-align: center;
-        background-color: #F2EEEB;
+        background-color: #ffffff;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
         cursor: default;
         transition: all 400ms ease;
 
-        &hover {
+        &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             transform: translate(-3%);
         }
 
-        .tarjeta img {
+        img {
             max-width: 100%;
         }
 
-        .tarjeta h3 {
+        h3 {
             font-size: 1.3rem;
             font-weight: 600;
             color: #8C3264;
             margin: 1rem 0;
         }
 
-        .tarjeta p {
+        p {
             color: #363439;
             padding: .8rem;
         }
 
-        .boton_tarjeta {
-            font-size: 1rem;
-            color: #F2EEEB;
-            background-color: #D99CB2;
-            border-radius: 5px;
-            padding: 5px 20px;
-            margin-top: 20px;
-            border-color: #daa8ba;
-            margin-bottom: 1rem;
-
-            &hover {
-                color: #9A80BF;
-                background-color: #daa8ba;
-            }
+        a{
+            .boton_tarjeta {
+                font-size: 1rem;
+                color: #F2EEEB;
+                background-color: #D99CB2;
+                border-radius: 5px;
+                padding: 5px 20px;
+                margin-top: 20px;
+                border-color: #daa8ba;
+                margin-bottom: 1rem;
+    
+                &:hover {
+                    color: #9A80BF;
+                    background-color: #daa8ba;
+                }
+            } 
         }
     }
 }

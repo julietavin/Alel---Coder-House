@@ -5,7 +5,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: 100vh;*/
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -27,58 +26,58 @@
         transition: all 400ms ease;
         gap: 5px;
         padding: 20px;
-    }
 
-    .formulario__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        h2 {
-            font-size: 2rem;
-            color: #8C3264;
-            font-family: "Reddit Mono", monospace;
-            font-weight: 500;
+        .formulario__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+    
+            h2 {
+                font-size: 2rem;
+                color: #8C3264;
+                font-family: "Reddit Mono", monospace;
+                font-weight: 500;
+            }
         }
-
-    }
-
-    .formulario__campo {
-        display: inline-block;
-
-        input {
+        .formulario__campo {
+            display: inline-block;
+    
+            input {
+                border: none;
+                border-bottom: #D99CB2 2px solid;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+        textarea {
             border: none;
             border-bottom: #D99CB2 2px solid;
-            padding: 10px;
-            width: 100%;
         }
-    }
-
-    textarea {
-        border: none;
-        border-bottom: #D99CB2 2px solid;
-    }
-
-    .btn_acciones {
-        display: flex;
-        justify-content: end;
-        gap: 10px;
-
-        .boton_frm {
-            font-size: 1rem;
-            color: #F2EEEB;
-            background-color: #D99CB2;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin-top: 10px;
-            border-color: #daa8ba;
-            margin-bottom: 10px;
-
-            &hover {
-                color: #9A80BF;
-                background-color: #daa8ba;
+        .btn_acciones {
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+    
+            .boton_frm {
+                font-size: 1rem;
+                color: #F2EEEB;
+                background-color: #D99CB2;
+                border-radius: 5px;
+                padding: 5px 10px;
+                margin-top: 10px;
+                border-color: #daa8ba;
+                margin-bottom: 10px;
+    
+                &:hover {
+                    color: #9A80BF;
+                    background-color: #daa8ba;
+                }
             }
         }
     }
+
+    
+
+    
 }
