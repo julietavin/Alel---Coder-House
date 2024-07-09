@@ -50,7 +50,7 @@
         align-items: center;
     }
 
-    .grid_container {
+    .cuidados .grid_container {
         display: grid;
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
@@ -116,7 +116,7 @@
         font-size: 10rem;
     }
 
-    .grid_container {
+    .cuidados .grid_container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
@@ -128,7 +128,7 @@
             "caja7 caja8";
     }
 
-    .sobreme p {
+    .sobremi p {
         text-align: center;
     }
 
