@@ -42,8 +42,8 @@
             padding: .8rem;
         }
 
-        a{
-            .boton_tarjeta {
+        a {
+            /*.boton_tarjeta {
                 font-size: 1rem;
                 color: #F2EEEB;
                 background-color: #D99CB2;
@@ -57,22 +57,67 @@
                     color: #9A80BF;
                     background-color: #daa8ba;
                 }
-            } 
+            } */
         }
     }
 }
 
+.boton_tarjeta {
+    font-size: 1rem;
+    color: #F2EEEB;
+    background-color: #D99CB2;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-color: #daa8ba;
+    margin-bottom: 1rem;
+
+    &:hover {
+        color: #9A80BF;
+        background-color: #daa8ba;
+    }
+}
 
 /********************PAGINA SERVICIOS*****************/
+.cursos {
+    min-height: 30vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.accordion-button{
+    h2 {
+        color: #8C3264;
+        font-size: 2rem;
+    }
+
+    i {
+        color: #8C3264;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: .8rem;
+    }
+}
+
+.accordion-button {
     background-color: #9a80bfa7;
     color: #F2EEEB;
     font-size: 1.3rem;
 }
 
+.accordion {
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-active-bg: #8c326482;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #8c3263a8;
+}
 
 
 
 
-
+.cursos_contenedor_cards .contenedor_cartas .card i {
+    width: 200px;
+    color: #8C3264;
+}

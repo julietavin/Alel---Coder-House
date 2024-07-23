@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montez&family=Reddit+Mono:wght@200..900&family=Yomogi&display=swap");
 /**************RESET***************/
 * {
@@ -242,7 +241,7 @@
 }
 
 .venta {
-  max-height: 100vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -269,29 +268,8 @@
   margin-bottom: 0.8rem;
 }
 
-.productos_galeria {
-  position: relative;
-  cursor: pointer;
+.productos .row .div .img {
   overflow: hidden;
-}
-.productos_galeria::before {
-  content: "Alelí";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(154, 128, 191, 0.5333333333);
-  transform: translate(100%);
-  transition: transform 0.4s;
-  color: #F2EEEB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-.productos_galeria:hover::before {
-  transform: translate(0);
 }
 
 /***********************SECCION CUIDADOS**********************/
@@ -421,7 +399,6 @@ footer .redes a i:hover {
   max-width: 60%;
   padding: 3rem;
   gap: 2rem;
-  margin-top: 2rem;
 }
 .sobremi div h2 {
   color: #8C3264;
@@ -470,7 +447,8 @@ footer .redes a i:hover {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .galeria img:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
@@ -577,9 +555,6 @@ footer .redes a i:hover {
     flex-direction: column;
     height: auto;
   }
-  .sobremi img {
-    margin-top: 3rem;
-  }
   .container {
     flex-direction: column;
   }
@@ -679,6 +654,4 @@ footer .redes a i:hover {
     order: 2;
     padding: 1rem 0;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

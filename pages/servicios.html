@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alelí | Servicios</title>
-    <meta name="description" content="Te ofrezco productos de calidad, hechos a mano para regalar y regalarte. Además, te invito a sumarte a mis cursos para principiantes y avanzados">
+    <meta name="description"
+        content="Te ofrezco productos de calidad, hechos a mano para regalar y regalarte. Además, te invito a sumarte a mis cursos para principiantes y avanzados">
     <meta name="keywords" content="crochet, lana, amigurumi, curso ,tienda, almacén, aguja, tejer">
     <link rel="shortcut icon" href="../img/logo-aleli-Photoroom.png-Photoroom.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,7 +41,7 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="servicios.html">Venta on-line</a></li>
+                                <li><a class="dropdown-item" href="venta.html">Venta on-line</a></li>
                                 <li><a class="dropdown-item" href="servicios.html">Cursos</a></li>
                             </ul>
                         </li>
@@ -56,6 +57,14 @@
         </nav>
     </header>
     <main>
+        <section class="container cursos mt-5">
+            <h2>Cursos</h2>
+            <i class="bi bi-suit-heart-fill"></i>
+            <p>Tengo una propuesta para cada necesidad o deseo, no importa si nunca agarraste una aguja o si ya diste
+                los primeros pasos, te acompaño en el proceso individual para que te lleves tu proyecto terminado.
+                Animate, <code>¡el único límite es tu imaginación!</code></p>
+
+        </section>
         <section class="container d-flex justify-content-around h-80 p-5">
             <div class="row col-md-6">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -64,14 +73,15 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                Cursos
+                                Modalidad
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Los cursos son presenciales y estan destinados para aquellas
-                                personas que quieran aprender desde cero y para quellas que saben tejer y desean
-                                perfeccionar su técnica. <code>SÁBADOS DE 10 A 12hs y DE 15 A 17hs</code></div>
+                            <div class="accordion-body">Los cursos son <code>presenciales</code> y estan destinados para
+                                aquellas
+                                personas que quieran aprender desde cero y para aquellas que saben tejer y desean
+                                perfeccionar su técnica. </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -79,14 +89,14 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                Venta on-line
+                                Horarios
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">En <code>Alelí</code> pensamos en todo! Si queres regalar o
-                                regalarte un objeto o prenda a crochet ésta es tu mejor opción. Podes alegir de la
-                                galería o solicitar cotización por cualquier otro proyecto que te guste.</div>
+                            <div class="accordion-body"><code>SÁBADOS</code></div>
+                            <p>De 10hs a 12hs</p>
+                            <p>De 15hs a 17 hs</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -94,14 +104,14 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                Campañas solidarias
+                                Materiales
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Cada alumn@ que asista al curso, podrá aportar uno o varios
-                                cuadraditos tejidos a crochet para confeccionar mantas para donar. Creemos en un espacio
-                                colaborativo, en donde el trabajo y el aporte colectivo hacen la diferencia. </div>
+                            <div class="accordion-body"> El <code>curso inicial</code> incluye las herramientas de
+                                trabajo básicas(agujas, patrones, etc.). Si queres realizar el <code>curso libre</code>
+                                con un diseño personalizado, los materiales dependerán del proyecto elegido.</div>
                         </div>
                     </div>
                 </div>
@@ -140,8 +150,32 @@
                     </button>
                 </div>
             </div>
+        </section>
 
 
+        <section class="container cursos_contenedor_cards mb-5">
+            <div class=" contenedor_cartas row mt-3 mb-4 justify-content-center gap-2">
+                <div class="col-md-5">
+                    <div class="card p-2">
+                        <i class="bi bi-bookmark-heart p-2"></i>
+                        <div class="card-body bg-body-tertiary rounded">
+                            <h5 class="card-title text-danger-emphasis">Curso Inicial</h5>
+                            <p class="card-text mt-1">Hacemos un recorrido por los puntos básicos del crochet y terminas tejiendo un hermoso proyecto completo. Inlcuye todos los materiales, sólo tenes que ir a aprender y disfutar...¡te espero!!</p>
+                            <a href="../pages/contacto.html" class="boton_tarjeta">Más info...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card p-2" >
+                        <i class="bi bi-bookmark-heart p-2"></i>
+                        <div class="card-body bg-body-tertiary rounded">
+                            <h5 class="card-title text-danger-emphasis">Curso Libre</h5>
+                            <p class="card-text mt-1">Este curso requiere conocimientos previos. Podras tejer amigurumis, prendas, accesorios, objetos de decoración o lo que más te guste. Elegí tu proyecto y te ayudo a concretarlo...¡te espero!!</p>
+                            <a href="../pages/contacto.html" class="boton_tarjeta">Más info...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
